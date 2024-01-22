@@ -1,0 +1,115 @@
+# --> check the Python program
+- search/search/main.py:
+  - description: Ensure that the main.py file exists in the search/search directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the main.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Create word_search function in the main.py
+    check: MatchFileFragment
+    options:
+      fragment: def word_search(
+      count: 1
+      exact: true
+  - description: Create human_readable_boolean function in the main.py
+    check: MatchFileFragment
+    options:
+      fragment: def human_readable_boolean(
+      count: 1
+      exact: true
+  - description: Create confirm_valid_file function in the main.py
+    check: MatchFileFragment
+    options:
+      fragment: def confirm_valid_file(
+      count: 1
+      exact: true
+  - description: Create a conditional statement to confirm_valid_file  in the main.py
+    check: MatchFileFragment
+    options:
+      fragment: if confirm_valid_file
+      count: 1
+      exact: true
+  - description: Create a sufficient number of docstring (i.e., multiple-line) comments in main.py
+    check: CountMultipleLineComments
+    options:
+      language: "Python"
+      count: 5
+      exact: false
+  - description: Create a sufficient number of single-line comments in main.py
+    check: CountSingleLineComments
+    options:
+      language: "Python"
+      count: 10
+      exact: false
+
+# --> check the Python program
+- search/tests/test_search.py:
+  - description: Ensure that the test_search.py file exists in the search/tests directory
+    check: ConfirmFileExists
+  - description: Complete all TODOs, remove the TODO markers in the main.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Confirm that the test_search.py file contains the required number of test cases
+    check: MatchFileFragment
+    options:
+      fragment: test_
+      count: 5
+      exact: true
+  - description: Create a sufficient number of docstring (i.e., multiple-line) comments in test_square.py
+    check: CountMultipleLineComments
+    options:
+      language: "Python"
+      count: 3
+      exact: false
+
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that the reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Write a minimum number of meaningful words in the reflection
+    check: CountFileWords
+    options:
+      count: 500
+      exact: false
+  - description: Confirm that the markdown file has the correct number of headers
+    check: CountMarkdownTags
+    options:
+      tag: heading
+      count: 14
+      exact: false
+  - description: Confirm that the markdown file has the correct number of fenced code blocks
+    check: CountMarkdownTags
+    options:
+      tag: code_block
+      count: 5
+      exact: true
+  - description: Complete all TODOs, remove the TODO markers, and rewrite comments for the reflection
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+  - description: Delete the 'Add Your Name Here' prompt in the reflection file
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Confirm that there is a reference to specific source code output in the writing
+    check: MatchFileFragment
+    options:
+      fragment: not a valid file
+      count: 1
+      exact: true
+
+  # count number of commits in the GitHub repository
+- description: Have at least a specific minimum of commits in repository
+  check: CountCommits
+  options:
+    count: 5
