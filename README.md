@@ -3,7 +3,7 @@
 ## Assigned and Due
 
 - __Assigned__: Monday, 22 Jan 2024
-- __Due__: Monday, 28 January 2024
+- __Due__: Monday, 29 January 2024
 - __Expiration__: 5 Feb 2024
 
 ---
