@@ -60,7 +60,7 @@ This project invites you to implement a file searching program called `search`. 
 Was the word "speckled" found in the file input/speckledBand.txt? Yes
 ```
 
-When you search for a word that does not appear inside of the input file with a command like `poetry run search --word conundrum --dir input --file speckledBand.txt` then the program will produce the following output:
+When you search for a word that does not appear inside of the input file with a command like `poetry run search --word elementary --dir input --file speckledBand.txt` then the program will produce the following output:
 
 ```shell
 😃 Searching through the file called input/speckledBand.txt!
