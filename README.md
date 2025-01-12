@@ -2,8 +2,8 @@
 
 ## Assigned and Due
 
-- __Assigned__: Wednesday, 22 Jan 2025
-- __Due__: Monday, 27 Jan 2025
+- __Assigned__: Friday, 17 Jan 2025
+- __Due__: Friday, 24 Jan 2025
 
 ---
 
