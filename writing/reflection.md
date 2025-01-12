@@ -12,7 +12,7 @@ TODO: Use a fenced code block to provide the output for this command.
 
 TODO: Use a fenced code block to provide the output for this command.
 
-- `poetry run search --word ethical --dir input --file proactive.txt`
+- `poetry run search --word ethical --dir input --file speckledBand.txt`
 
 ## Source Code and Configuration Files
 
