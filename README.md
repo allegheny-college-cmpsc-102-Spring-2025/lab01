@@ -7,7 +7,7 @@
 
 ---
 
-![The Games's a foot!](graphics/sholmes_sm.png)
+![Lab1!](graphics/lab01.png)
 
 You are invited to complete a program to play the part of Sherlock Holmes to uncover words in a block of text.
 
