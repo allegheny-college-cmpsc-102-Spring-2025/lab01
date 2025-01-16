@@ -7,7 +7,7 @@
 
 ---
 
-![Lab1!](graphics/mathPython.png)
+![Lab1!](graphics/sholmes_sm.png)
 
 You are invited to complete a program to play the part of Sherlock Holmes to uncover words in a block of text.
 
